@@ -1,2 +1,2 @@
-# demoqa-tests
+# tools & libs
 QAGURU | lesson 3
