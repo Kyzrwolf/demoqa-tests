@@ -1,2 +1,2 @@
 # tools & libs
-QAGURU | lesson 3
+QAGURU | Домашние задания
