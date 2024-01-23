@@ -21,10 +21,11 @@ public class DragAndDropTest {
     @Test
     void dragAndDropTest() {
         open("drag_and_drop");
+        $("#column-a header").shouldHave(textCaseSensitive("A"));
+        $("#column-b header").shouldHave(textCaseSensitive("B"));
        SelenideElement elementA = $("#column-a");
        SelenideElement elementB = $("#column-b");
-        Selenide.actions()
-                        .dragAndDrop(elementA,elementB).perform();
+        Selenide.actions().dragAndDrop(elementA,elementB).perform();
         $("#column-a header").shouldHave(textCaseSensitive("B"));
         $("#column-b header").shouldHave(textCaseSensitive("A"));
     }

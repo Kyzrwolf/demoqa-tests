@@ -20,7 +20,7 @@ public class GitHubSolutionsTest {
     }
 
     @Test
-    void gitHubSolutionsTest() throws InterruptedException {
+    void gitHubSolutionsTest() {
         open("https://github.com/");
         $$("button").findBy(text(" Solutions ")).hover();
         $(byText("Enterprise")).click();
